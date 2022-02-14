@@ -1,0 +1,39 @@
+@import './../../../../styles/variables.scss';
+
+.this__day {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: $lite-bg;
+  box-shadow: $box-shadow;
+  border-radius: $br-r-20;
+}
+
+.this__temp {
+  font-size: 96px;
+  font-weight: 500;
+  color: $blue;
+}
+
+.this__day_day {
+  font-size: 40px;
+  font-weight: 400;
+  color: $black;
+}
+
+.top__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.bottom__block {
+  font-size: 25px;
+  font-weight: 400;
+  color: $gray;
+}
+
+.this__time {
+  margin-bottom: 15px;
+}
