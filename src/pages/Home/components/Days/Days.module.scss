@@ -65,3 +65,39 @@
 .temp__night {
   margin-bottom: 6px;
 }
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+  &__wrapper {
+    display: flex;
+  }
+}
+
+.cancel,
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 20px;
+  margin-right: 15px;
+  font-size: 18px;
+  color: $dark;
+  background: $lite-bg;
+  box-shadow: $box-shadow;
+  border-radius: $br-r-5;
+  cursor: pointer;
+}
+
+.tab {
+  &.active {
+    background: $blue;
+    color: $lite-bg;
+  }
+}
+
+.cancel {
+  margin-right: 0;
+}

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Card } from './Card';
 import s from './Days.module.scss';
+import { Tabs } from './Tabs';
 
 interface Props {
 }
@@ -76,8 +77,11 @@ export const Days = (props: Props) => {
 	]
 
 	return (
-		<div className={s.days}>
-			{days.map((day: Day) => <Card day={day} />)}
-		</div>
+		<>
+			<Tabs />
+			<div className={s.days}>
+				{days.map((day: Day) => <Card day={day} />)}
+			</div>
+		</>
 	);
 }
